@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Street Art Festival</title>
+    <meta name="description"
+        content="Explore ticket prices and sponsorship packages for Street Art Festival. Find the perfect option for visitors, artists, and sponsors.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-palette-fill"></i> Street Art Festival
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="login.html" class="btn btn-secondary-custom btn-custom-sm">Login</a>
+                        <a href="register.html" class="btn btn-primary-custom btn-custom-sm">Sign Up</a>
+                        <button id="themeToggle" class="btn btn-outline-light btn-sm ms-2">
+                            <i class="bi bi-moon-fill"></i> Dark
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold">Festival Pricing</h1>
+                    <p class="lead">Choose the perfect ticket or sponsorship package to experience the ultimate street
+                        art celebration.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#tickets" class="btn btn-light btn-lg">Buy Tickets</a>
+                        <a href="#sponsorship" class="btn btn-outline-light btn-lg">Become Sponsor</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://picsum.photos/seed/pricing1/600/400.jpg" alt="Street Art Festival Pricing"
+                        class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticket Pricing Section -->
+    <section id="tickets" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ticket Packages</h2>
+                <p class="text-muted">Find the perfect ticket for your festival experience</p>
+            </div>
+
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Day Pass</h4>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">35</span>
+                                <span class="period">/day</span>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Full day access</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>All exhibitions</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Live performances</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Workshop observation</li>
+                                <li><i class="bi bi-x-circle text-danger me-2"></i>Workshop participation</li>
+                                <li><i class="bi bi-x-circle text-danger me-2"></i>VIP lounge access</li>
+                                <li><i class="bi bi-x-circle text-danger me-2"></i>Meet & greet</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Buy Day Pass</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pricing-card featured">
+                        <div class="card-body text-center">
+                            <span class="badge bg-warning text-dark mb-2">Most Popular</span>
+                            <h4 class="card-title">Weekend Pass</h4>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">85</span>
+                                <span class="period">/weekend</span>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>3-day full access</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>All exhibitions</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Live performances</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>1 workshop included</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Festival merchandise</li>
+                                <li><i class="bi bi-x-circle text-danger me-2"></i>VIP lounge access</li>
+                                <li><i class="bi bi-x-circle text-danger me-2"></i>Meet & greet</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary-custom w-100">Buy Weekend Pass</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">VIP Pass</h4>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">250</span>
+                                <span class="period">/festival</span>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Full festival access</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>All exhibitions</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>All live performances</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Unlimited workshops</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>VIP lounge access</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Artist meet & greet</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Premium merchandise</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Buy VIP Pass</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student/Senior Pricing -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card card-custom bg-light">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Special Discounts</h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="discount-item">
+                                        <i class="bi bi-mortarboard-fill text-primary fs-2 mb-2"></i>
+                                        <h6>Student Discount</h6>
+                                        <p class="mb-0">25% off with valid student ID</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="discount-item">
+                                        <i class="bi bi-person-heart-fill text-primary fs-2 mb-2"></i>
+                                        <h6>Senior Discount</h6>
+                                        <p class="mb-0">20% off for 65+ years</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Pricing -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Workshop Pricing</h2>
+                <p class="text-muted">Individual workshop sessions and packages</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-brush-fill text-primary fs-2 mb-3"></i>
+                            <h6>Spray Art Basics</h6>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">75</span>
+                            </div>
+                            <p class="small text-muted">3-hour session</p>
+                            <a href="service-details.html" class="btn btn-primary-custom btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-scissors text-primary fs-2 mb-3"></i>
+                            <h6>Stencil Art</h6>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">100</span>
+                            </div>
+                            <p class="small text-muted">4-hour session</p>
+                            <a href="service-details.html" class="btn btn-primary-custom btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop-fill text-primary fs-2 mb-3"></i>
+                            <h6>Digital Street Art</h6>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">120</span>
+                            </div>
+                            <p class="small text-muted">5-hour session</p>
+                            <a href="service-details.html" class="btn btn-primary-custom btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-building text-primary fs-2 mb-3"></i>
+                            <h6>Mural Creation</h6>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">200</span>
+                            </div>
+                            <p class="small text-muted">2-day project</p>
+                            <a href="service-details.html" class="btn btn-primary-custom btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Section -->
+    <section id="sponsorship" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sponsorship Packages</h2>
+                <p class="text-muted">Partner with us to support urban art and gain valuable exposure</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="pricing-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Community</h5>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">1,000</span>
+                            </div>
+                            <ul class="list-unstyled text-start small">
+                                <li><i class="bi bi-check text-success me-2"></i>Social media mention</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Logo on website</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Event program listing</li>
+                                <li><i class="bi bi-x text-danger me-2"></i>On-site presence</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="pricing-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Supporter</h5>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">5,000</span>
+                            </div>
+                            <ul class="list-unstyled text-start small">
+                                <li><i class="bi bi-check text-success me-2"></i>All Community benefits</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Small booth space</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Logo on materials</li>
+                                <li><i class="bi bi-check text-success me-2"></i>10 tickets included</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="pricing-card featured">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Partner</h5>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">15,000</span>
+                            </div>
+                            <ul class="list-unstyled text-start small">
+                                <li><i class="bi bi-check text-success me-2"></i>All Supporter benefits</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Premium booth space</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Stage naming rights</li>
+                                <li><i class="bi bi-check text-success me-2"></i>25 tickets included</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary-custom btn-sm w-100">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="pricing-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Title Sponsor</h5>
+                            <div class="price-display mb-3">
+                                <span class="currency">$</span>
+                                <span class="amount">50,000</span>
+                            </div>
+                            <ul class="list-unstyled text-start small">
+                                <li><i class="bi bi-check text-success me-2"></i>All Partner benefits</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Title naming rights</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Exclusive category</li>
+                                <li><i class="bi bi-check text-success me-2"></i>50 VIP tickets</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Pricing -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Group & School Packages</h2>
+                <p class="text-muted">Special pricing for groups and educational institutions</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-people-fill text-primary fs-2 me-3"></i>
+                                <h5 class="card-title mb-0">Group Package (10+ people)</h5>
+                            </div>
+                            <p class="lead text-primary mb-3">20% off regular ticket prices</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Dedicated group entrance</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Group coordinator support</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Flexible payment options</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Free parking for group bus</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary-custom">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-mortarboard-fill text-primary fs-2 me-3"></i>
+                                <h5 class="card-title mb-0">School Package</h5>
+                            </div>
+                            <p class="lead text-primary mb-3">30% off for educational groups</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Educational materials included
+                                </li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Artist Q&A sessions</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Curriculum alignment</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>1 free teacher per 20 students
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary-custom">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p class="text-muted">Everything you need to know about our pricing</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="pricingFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Are tickets refundable?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body">
+                                    Yes, tickets are refundable up to 7 days before the event date with a 10% processing
+                                    fee. Within 7 days, tickets can be transferred to another person but not refunded.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Do children need tickets?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body">
+                                    Children under 12 enter free with a paying adult. Children 12-17 receive 50% off
+                                    regular ticket prices with valid ID.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body">
+                                    We accept all major credit cards, debit cards, PayPal, and bank transfers for group
+                                    bookings. On-site payments can also be made in cash.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Can I upgrade my ticket later?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body">
+                                    Yes, you can upgrade your ticket at any time by paying the difference. Upgrades are
+                                    subject to availability.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Join the Festival?</h2>
+            <p class="lead mb-4">Secure your tickets now and be part of the most exciting street art event of the year!
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#" class="btn btn-light btn-lg">Buy Tickets Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Sales Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5><i class="bi bi-palette-fill"></i> Street Art Festival</h5>
+                    <p>Celebrating urban creativity and bringing art to the streets. Join us for an unforgettable
+                        experience of colors, culture, and community.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on upcoming events and exclusive offers.</p>
+                    <form id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 Street Art Festival. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        .price-display {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .price-display .currency {
+            font-size: 1.5rem;
+            vertical-align: super;
+        }
+
+        .price-display .period {
+            font-size: 1rem;
+            color: var(--light-text);
+            font-weight: 400;
+        }
+
+        [data-theme="dark"] .price-display .period {
+            color: var(--dark-text);
+        }
+
+        .discount-item {
+            padding: 1rem;
+            border-radius: 10px;
+            background: rgba(255, 107, 53, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .discount-item:hover {
+            background: rgba(255, 107, 53, 0.1);
+            transform: translateY(-2px);
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Street Art Festival</title>
+    <meta name="description"
+        content="Explore our comprehensive services including workshops, exhibitions, performances, and educational programs at Street Art Festival.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-palette-fill"></i> Street Art Festival
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="login.html" class="btn btn-secondary-custom btn-custom-sm">Login</a>
+                        <a href="register.html" class="btn btn-primary-custom btn-custom-sm">Sign Up</a>
+                        <button id="themeToggle" class="btn btn-outline-light btn-sm ms-2">
+                            <i class="bi bi-moon-fill"></i> Dark
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold">Our Services</h1>
+                    <p class="lead">Discover a wide range of artistic experiences, from hands-on workshops to
+                        spectacular exhibitions and performances.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#workshops" class="btn btn-light btn-lg">Explore Workshops</a>
+                        <a href="service-details.html" class="btn btn-outline-light btn-lg">View Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/600x400/FF6B35/FFFFFF?text=Our+Services"
+                        alt="Street Art Festival Services" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What We Offer</h2>
+                <p class="text-muted">Comprehensive services for art enthusiasts and creators</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-brush-fill text-primary fs-1 mb-3"></i>
+                            <h4>Art Workshops</h4>
+                            <p>Hands-on learning experiences with professional artists covering various techniques and
+                                styles.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Spray Painting</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Stencil Art</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Digital Street Art</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Mural Creation</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-images text-primary fs-1 mb-3"></i>
+                            <h4>Exhibitions</h4>
+                            <p>Curated gallery spaces showcasing works from emerging and established street artists
+                                worldwide.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Group Exhibitions</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Solo Shows</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Thematic Collections</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Virtual Tours</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-music-note-beamed text-primary fs-1 mb-3"></i>
+                            <h4>Live Performances</h4>
+                            <p>Dynamic performances combining art, music, and movement for unforgettable experiences.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Live Painting</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Dance Performances</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Music Shows</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Theater Acts</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-mortarboard-fill text-primary fs-1 mb-3"></i>
+                            <h4>Educational Programs</h4>
+                            <p>Comprehensive learning programs for schools, universities, and community groups.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>School Programs</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>University Courses</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Community Classes</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Summer Camps</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-trophy-fill text-primary fs-1 mb-3"></i>
+                            <h4>Competitions</h4>
+                            <p>Exciting competitions and battles showcasing the best street art talent.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Art Battles</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Design Contests</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Youth Competitions</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Professional Leagues</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-camera-reels-fill text-primary fs-1 mb-3"></i>
+                            <h4>Media Production</h4>
+                            <p>Professional documentation and media services for artists and events.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Photo Documentation</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Video Production</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Live Streaming</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Podcast Creation</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Workshops</h2>
+                <p class="text-muted">Join our most popular hands-on learning experiences</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card card-custom">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/seed/spray1/200/200.jpg"
+                                    class="img-fluid rounded-start h-100" alt="Spray Art Workshop">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spray Art Fundamentals</h5>
+                                    <p class="card-text">Learn the basics of spray painting techniques, safety
+                                        protocols, and create your first masterpiece.</p>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-clock me-2"></i>
+                                        3 hours
+                                        <i class="bi bi-person ms-3 me-2"></i>
+                                        Max 15 people
+                                    </div>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-tag me-2"></i>
+                                        $75 per person
+                                    </div>
+                                    <a href="service-details.html" class="btn btn-primary-custom">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card card-custom">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/seed/stencil1/200/200.jpg"
+                                    class="img-fluid rounded-start h-100" alt="Stencil Art Workshop">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stencil Art Masterclass</h5>
+                                    <p class="card-text">Master the art of stencil creation and multi-layered street art
+                                        techniques.</p>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-clock me-2"></i>
+                                        4 hours
+                                        <i class="bi bi-person ms-3 me-2"></i>
+                                        Max 12 people
+                                    </div>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-tag me-2"></i>
+                                        $100 per person
+                                    </div>
+                                    <a href="service-details.html" class="btn btn-primary-custom">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card card-custom">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/seed/digital1/200/200.jpg"
+                                    class="img-fluid rounded-start h-100" alt="Digital Art Workshop">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Digital Street Art</h5>
+                                    <p class="card-text">Explore digital tools and techniques for creating modern street
+                                        art and projections.</p>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-clock me-2"></i>
+                                        5 hours
+                                        <i class="bi bi-person ms-3 me-2"></i>
+                                        Max 10 people
+                                    </div>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-tag me-2"></i>
+                                        $120 per person
+                                    </div>
+                                    <a href="service-details.html" class="btn btn-primary-custom">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card card-custom">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/seed/mural1/200/200.jpg"
+                                    class="img-fluid rounded-start h-100" alt="Mural Workshop">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Community Mural Project</h5>
+                                    <p class="card-text">Collaborate on a large-scale mural project that will beautify
+                                        the community.</p>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-clock me-2"></i>
+                                        2 days
+                                        <i class="bi bi-person ms-3 me-2"></i>
+                                        Max 25 people
+                                    </div>
+                                    <div class="d-flex align-items-center text-muted small mb-3">
+                                        <i class="bi bi-tag me-2"></i>
+                                        $200 per person
+                                    </div>
+                                    <a href="service-details.html" class="btn btn-primary-custom">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Rental Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Equipment Rental</h2>
+                <p class="text-muted">Professional-grade art equipment available for rent</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="equipment-grid">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="equipment-card">
+                                    <img src="https://picsum.photos/seed/spray1/400/250.jpg" alt="Spray Equipment"
+                                        class="img-fluid rounded-3 mb-3">
+                                    <h5>Spray Paint Kits</h5>
+                                    <p class="text-muted">Complete spray painting kits with various nozzles and colors
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-primary fw-bold">$25/day</span>
+                                        <button class="btn btn-primary-custom btn-sm">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="equipment-card">
+                                    <img src="https://picsum.photos/seed/stencil2/400/250.jpg" alt="Stencil Equipment"
+                                        class="img-fluid rounded-3 mb-3">
+                                    <h5>Stencil Sets</h5>
+                                    <p class="text-muted">Professional stencil cutting tools and template sets</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-primary fw-bold">$15/day</span>
+                                        <button class="btn btn-primary-custom btn-sm">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="equipment-card">
+                                    <img src="https://picsum.photos/seed/digital2/400/250.jpg" alt="Digital Equipment"
+                                        class="img-fluid rounded-3 mb-3">
+                                    <h5>Digital Projectors</h5>
+                                    <p class="text-muted">High-resolution projectors for digital street art</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-primary fw-bold">$50/day</span>
+                                        <button class="btn btn-primary-custom btn-sm">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="equipment-card">
+                                    <img src="https://picsum.photos/seed/safety1/400/250.jpg" alt="Safety Equipment"
+                                        class="img-fluid rounded-3 mb-3">
+                                    <h5>Safety Gear</h5>
+                                    <p class="text-muted">Masks, gloves, and protective equipment for safe art creation
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-primary fw-bold">$10/day</span>
+                                        <button class="btn btn-primary-custom btn-sm">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="rental-info bg-white p-4 rounded-3 shadow">
+                        <h4 class="mb-4">Rental Information</h4>
+                        <div class="rental-features">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                <div>
+                                    <h6 class="mb-0">Daily & Weekly Rates</h6>
+                                    <small class="text-muted">Flexible rental periods</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                <div>
+                                    <h6 class="mb-0">Professional Quality</h6>
+                                    <small class="text-muted">Industry-standard equipment</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                <div>
+                                    <h6 class="mb-0">Free Training</h6>
+                                    <small class="text-muted">Basic usage instructions included</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                <div>
+                                    <h6 class="mb-0">Delivery Available</h6>
+                                    <small class="text-muted">Equipment delivered to your location</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-3 bg-light rounded-3">
+                            <h6 class="text-primary mb-2">Need Help?</h6>
+                            <p class="small mb-3">Our team can help you choose the right equipment for your project.</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm w-100">Get Expert Advice</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Collaboration Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Artist Collaboration</h2>
+                <p class="text-muted">Connect with talented artists for your creative projects</p>
+            </div>
+
+            <div class="collaboration-showcase">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="collaboration-card">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://picsum.photos/seed/artist2/300/300.jpg" alt="Artist Profile"
+                                        class="img-fluid rounded-start h-100">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Sarah Mitchell</h5>
+                                            <span class="badge bg-success ms-2">Available</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Mural Specialist • 8 Years Experience</p>
+                                        <p class="card-text">Specializes in large-scale murals and community art
+                                            projects. Expert in both traditional and digital techniques.</p>
+                                        <div class="skills-tags mb-3">
+                                            <span class="badge bg-light text-dark me-1">Murals</span>
+                                            <span class="badge bg-light text-dark me-1">Acrylic</span>
+                                            <span class="badge bg-light text-dark me-1">Digital</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-primary fw-bold">$500/day</span>
+                                            <button class="btn btn-primary-custom btn-sm">Hire Artist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="collaboration-card">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://picsum.photos/seed/artist3/300/300.jpg" alt="Artist Profile"
+                                        class="img-fluid rounded-start h-100">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Carlos Rodriguez</h5>
+                                            <span class="badge bg-warning ms-2">Busy</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Spray Artist • 5 Years Experience</p>
+                                        <p class="card-text">Master of spray paint techniques and urban art styles.
+                                            Available for commissions and workshops.</p>
+                                        <div class="skills-tags mb-3">
+                                            <span class="badge bg-light text-dark me-1">Spray Paint</span>
+                                            <span class="badge bg-light text-dark me-1">Stencils</span>
+                                            <span class="badge bg-light text-dark me-1">3D Art</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-primary fw-bold">$350/day</span>
+                                            <button class="btn btn-outline-primary btn-sm">Contact</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collaboration-process">
+                    <h4 class="text-center mb-4">How It Works</h4>
+                    <div class="row g-4">
+                        <div class="col-md-3 text-center">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <h6>Browse Artists</h6>
+                                <p class="small text-muted">Explore our curated selection of talented artists</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <h6>Submit Request</h6>
+                                <p class="small text-muted">Describe your project and requirements</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <h6>Get Matched</h6>
+                                <p class="small text-muted">We connect you with the perfect artist</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <h6>Create Together</h6>
+                                <p class="small text-muted">Bring your vision to life with expert help</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="contact.html" class="btn btn-primary-custom btn-lg me-3">Start Collaboration</a>
+                    <a href="#" class="btn btn-outline-primary btn-lg">View All Artists</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Create Something Amazing?</h2>
+            <p class="lead mb-4">Join our workshops and unleash your creative potential with guidance from professional
+                artists.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="pricing.html" class="btn btn-light btn-lg">View Pricing</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5><i class="bi bi-palette-fill"></i> Street Art Festival</h5>
+                    <p>Celebrating urban creativity and bringing art to the streets. Join us for an unforgettable
+                        experience of colors, culture, and community.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on upcoming events and exclusive offers.</p>
+                    <form id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 Street Art Festival. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

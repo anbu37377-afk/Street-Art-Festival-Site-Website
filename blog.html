@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Street Art Festival</title>
+    <meta name="description"
+        content="Read the latest news, artist interviews, and street art insights from the Street Art Festival blog.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-palette-fill"></i> Street Art Festival
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="login.html" class="btn btn-secondary-custom btn-custom-sm">Login</a>
+                        <a href="register.html" class="btn btn-primary-custom btn-custom-sm">Sign Up</a>
+                        <button id="themeToggle" class="btn btn-outline-light btn-sm ms-2">
+                            <i class="bi bi-moon-fill"></i> Dark
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold">Street Art Blog</h1>
+                    <p class="lead">Discover inspiring stories, artist interviews, and the latest trends in urban art
+                        culture.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://picsum.photos/seed/bloghero/400/300.jpg" alt="Street Art Blog"
+                        class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="search-filter-container">
+                        <div class="row g-3">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                    <input type="text" id="searchInput" class="form-control"
+                                        placeholder="Search articles...">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control" id="categoryFilter">
+                                    <option value="">All Categories</option>
+                                    <option value="artist-spotlight">Artist Spotlight</option>
+                                    <option value="techniques">Techniques</option>
+                                    <option value="festival-news">Festival News</option>
+                                    <option value="culture">Culture</option>
+                                    <option value="tutorials">Tutorials</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog-posts">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-card card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://picsum.photos/seed/interview1/300/200.jpg"
+                                        class="img-fluid rounded-start h-100" alt="Artist Interview">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-primary me-2">Artist Spotlight</span>
+                                            <small class="text-muted">March 15, 2026</small>
+                                        </div>
+                                        <h5 class="card-title">Meet Maya Chen: The Stencil Master</h5>
+                                        <p class="card-text">Discover the journey of Maya Chen, from small-town artist
+                                            to internationally recognized stencil artist. Learn about her unique
+                                            techniques and what inspires her intricate designs.</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">By Sarah Johnson</small>
+                                            </div>
+                                            <a href="blog-details.html" class="btn btn-primary-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 2 -->
+                        <article class="blog-card card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://picsum.photos/seed/technique1/300/200.jpg"
+                                        class="img-fluid rounded-start h-100" alt="Technique Guide">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-success me-2">Techniques</span>
+                                            <small class="text-muted">March 12, 2026</small>
+                                        </div>
+                                        <h5 class="card-title">5 Essential Spray Paint Techniques Every Artist Should
+                                            Know</h5>
+                                        <p class="card-text">Master the fundamentals of spray painting with these
+                                            essential techniques. From basic lines to complex fades, this guide will
+                                            help you elevate your street art skills.</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">By Alex Rivera</small>
+                                            </div>
+                                            <a href="blog-details.html" class="btn btn-primary-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 3 -->
+                        <article class="blog-card card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://picsum.photos/seed/news1/300/200.jpg"
+                                        class="img-fluid rounded-start h-100" alt="Festival News">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-warning text-dark me-2">Festival News</span>
+                                            <small class="text-muted">March 10, 2026</small>
+                                        </div>
+                                        <h5 class="card-title">Announcing Our 2026 Featured Artists Lineup</h5>
+                                        <p class="card-text">We're thrilled to reveal the incredible lineup of artists
+                                            joining us for this year's festival. From graffiti legends to emerging
+                                            talents, get ready for an unforgettable celebration.</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">By Emily Rodriguez</small>
+                                            </div>
+                                            <a href="blog-details.html" class="btn btn-primary-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 4 -->
+                        <article class="blog-card card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://picsum.photos/seed/culture1/300/200.jpg"
+                                        class="img-fluid rounded-start h-100" alt="Culture">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-info me-2">Culture</span>
+                                            <small class="text-muted">March 8, 2026</small>
+                                        </div>
+                                        <h5 class="card-title">The Evolution of Street Art: From Vandalism to Valued Art
+                                            Form</h5>
+                                        <p class="card-text">Explore how street art has transformed from underground
+                                            subculture to mainstream art movement. Discover the key moments and artists
+                                            who shaped this evolution.</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">By Michael Chen</small>
+                                            </div>
+                                            <a href="blog-details.html" class="btn btn-primary-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 5 -->
+                        <article class="blog-card card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://picsum.photos/seed/tutorial1/300/200.jpg"
+                                        class="img-fluid rounded-start h-100" alt="Tutorial">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-danger me-2">Tutorials</span>
+                                            <small class="text-muted">March 5, 2026</small>
+                                        </div>
+                                        <h5 class="card-title">Creating Your First Stencil: A Beginner's Guide</h5>
+                                        <p class="card-text">Step-by-step tutorial on creating and using stencils for
+                                            street art. Learn the tools, techniques, and tips to get started with
+                                            stencil art.</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">By David Kim</small>
+                                            </div>
+                                            <a href="blog-details.html" class="btn btn-primary-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Pagination -->
+                        <nav aria-label="Blog pagination" class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <!-- Categories -->
+                        <div class="card card-custom mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Categories</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-tag text-primary me-2"></i>
+                                            Artist Spotlight (12)
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-tag text-primary me-2"></i>
+                                            Techniques (8)
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-tag text-primary me-2"></i>
+                                            Festival News (15)
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-tag text-primary me-2"></i>
+                                            Culture (6)
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-tag text-primary me-2"></i>
+                                            Tutorials (10)
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Popular Posts -->
+                        <div class="card card-custom mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Popular Posts</h5>
+                                <div class="popular-posts">
+                                    <div class="d-flex mb-3">
+                                        <img src="https://picsum.photos/seed/popular1/60/60.jpg" alt="Popular Post"
+                                            class="rounded me-3" width="60" height="60">
+                                        <div>
+                                            <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none">10
+                                                    Street Artists to Watch in 2026</a></h6>
+                                            <small class="text-muted">2 days ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <img src="https://picsum.photos/seed/popular2/60/60.jpg" alt="Popular Post"
+                                            class="rounded me-3" width="60" height="60">
+                                        <div>
+                                            <h6 class="mb-1"><a href="blog-details.html"
+                                                    class="text-decoration-none">The Business of Street Art</a></h6>
+                                            <small class="text-muted">5 days ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <img src="https://picsum.photos/seed/popular3/60/60.jpg" alt="Popular Post"
+                                            class="rounded me-3" width="60" height="60">
+                                        <div>
+                                            <h6 class="mb-1"><a href="blog-details.html"
+                                                    class="text-decoration-none">Legal Guide for Street Artists</a></h6>
+                                            <small class="text-muted">1 week ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="card card-custom mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Popular Tags</h5>
+                                <div class="tag-cloud">
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">graffiti</a>
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">stencil art</a>
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">murals</a>
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">urban art</a>
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">spray paint</a>
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">contemporary</a>
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">culture</a>
+                                    <a href="#" class="badge bg-light text-dark me-2 mb-2">community</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="card card-custom">
+                            <div class="card-body">
+                                <h5 class="card-title">Subscribe to Our Newsletter</h5>
+                                <p class="small">Get the latest blog posts and festival updates delivered to your inbox.
+                                </p>
+                                <form id="blogNewsletterForm">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Your email" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary-custom w-100">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Video Content</h2>
+                <p class="text-muted">Watch exclusive interviews and festival highlights</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="video-featured">
+                        <div class="video-container position-relative rounded-3 overflow-hidden">
+                            <img src="https://picsum.photos/seed/video1/800/450.jpg" alt="Featured Video"
+                                class="img-fluid w-100">
+                            <div class="video-overlay">
+                                <div class="play-button">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Behind the Scenes: Festival 2026 Preparation</h4>
+                                    <p>Get an exclusive look at how artists prepare for the biggest street art festival
+                                        of the year.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-meta mt-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-eye me-2 text-muted"></i>
+                                    <span class="text-muted">15.2K views</span>
+                                    <i class="bi bi-clock ms-3 me-2 text-muted"></i>
+                                    <span class="text-muted">12:45</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-share"></i> Share
+                                    </button>
+                                    <button class="btn btn-primary-custom btn-sm">
+                                        <i class="bi bi-bookmark"></i> Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="video-playlist">
+                        <h5 class="mb-4">Recent Videos</h5>
+                        <div class="video-item d-flex mb-3">
+                            <img src="https://picsum.photos/seed/video2/120/80.jpg" alt="Video Thumbnail"
+                                class="rounded me-3" width="120" height="80">
+                            <div class="video-item-info">
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Artist Interview: Maya
+                                        Chen</a></h6>
+                                <small class="text-muted">8:30 • 2 days ago</small>
+                            </div>
+                        </div>
+                        <div class="video-item d-flex mb-3">
+                            <img src="https://picsum.photos/seed/video3/120/80.jpg" alt="Video Thumbnail"
+                                class="rounded me-3" width="120" height="80">
+                            <div class="video-item-info">
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Spray Art Techniques</a></h6>
+                                <small class="text-muted">15:20 • 5 days ago</small>
+                            </div>
+                        </div>
+                        <div class="video-item d-flex mb-3">
+                            <img src="https://picsum.photos/seed/video4/120/80.jpg" alt="Video Thumbnail"
+                                class="rounded me-3" width="120" height="80">
+                            <div class="video-item-info">
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Festival Highlights 2025</a>
+                                </h6>
+                                <small class="text-muted">22:15 • 1 week ago</small>
+                            </div>
+                        </div>
+                        <div class="video-item d-flex mb-3">
+                            <img src="https://picsum.photos/seed/video5/120/80.jpg" alt="Video Thumbnail"
+                                class="rounded me-3" width="120" height="80">
+                            <div class="video-item-info">
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Street Art Evolution</a></h6>
+                                <small class="text-muted">18:45 • 2 weeks ago</small>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View All Videos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Spotlight Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Community Spotlight</h2>
+                <p class="text-muted">Celebrating artists and enthusiasts from our community</p>
+            </div>
+
+            <div class="community-showcase">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="community-card h-100">
+                            <div class="row g-0 h-100">
+                                <div class="col-md-4">
+                                    <div class="community-image h-100">
+                                        <img src="https://picsum.photos/seed/community1/300/300.jpg"
+                                            alt="Community Artist"
+                                            class="img-fluid rounded-start h-100 w-100 object-fit-cover">
+                                        <div class="community-badge">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body p-3 d-flex flex-column h-100">
+                                        <h5 class="card-title">Community Artist of the Month</h5>
+                                        <h6 class="text-primary mb-2">James Rodriguez</h6>
+                                        <p class="card-text small">Local artist transforming neighborhoods with vibrant
+                                            murals. His work focuses on community themes and cultural diversity.</p>
+                                        <div class="community-stats mb-3 mt-auto">
+                                            <div class="row text-center g-2">
+                                                <div class="col-4">
+                                                    <h6 class="text-primary mb-0">25</h6>
+                                                    <small class="text-muted extra-small">Murals</small>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="text-primary mb-0">8</h6>
+                                                    <small class="text-muted extra-small">Workshops</small>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="text-primary mb-0">500+</h6>
+                                                    <small class="text-muted extra-small">Students</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <a href="#"
+                                                class="btn btn-primary-custom btn-sm flex-grow-1 text-center">View
+                                                Portfolio</a>
+                                            <a href="#"
+                                                class="btn btn-outline-primary btn-sm flex-grow-1 text-center">Follow</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="community-card h-100">
+                            <div class="row g-0 h-100">
+                                <div class="col-md-4">
+                                    <div class="community-image h-100">
+                                        <img src="https://picsum.photos/seed/community2/300/300.jpg"
+                                            alt="Community Project"
+                                            class="img-fluid rounded-start h-100 w-100 object-fit-cover">
+                                        <div class="community-badge">
+                                            <i class="bi bi-people-fill text-success"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body p-3 d-flex flex-column h-100">
+                                        <h5 class="card-title">Featured Community Project</h5>
+                                        <h6 class="text-success mb-2">Youth Art Initiative</h6>
+                                        <p class="card-text small">Empowering young artists through mentorship programs
+                                            and
+                                            public art projects. Creating opportunities for the next generation.</p>
+                                        <div class="project-highlights mb-3 mt-auto">
+                                            <div class="d-flex align-items-center mb-1">
+                                                <i class="bi bi-check-circle-fill text-success me-2 small"></i>
+                                                <small class="small">50+ Young Artists Mentored</small>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-1">
+                                                <i class="bi bi-check-circle-fill text-success me-2 small"></i>
+                                                <small class="small">10 Public Murals Created</small>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-check-circle-fill text-success me-2 small"></i>
+                                                <small class="small">5 Schools Partnered</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <a href="#" class="btn btn-success btn-sm flex-grow-1 text-center">Learn
+                                                More</a>
+                                            <a href="#"
+                                                class="btn btn-outline-success btn-sm flex-grow-1 text-center">Donate</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="community-gallery">
+                    <h5 class="mb-4">Community Gallery</h5>
+                    <div class="row g-3">
+                        <div class="col-md-3 col-6">
+                            <div class="gallery-item-small">
+                                <img src="https://picsum.photos/seed/gallery1/200/200.jpg" alt="Community Art"
+                                    class="img-fluid rounded-3">
+                                <div class="gallery-overlay-small">
+                                    <small>By Community Member</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="gallery-item-small">
+                                <img src="https://picsum.photos/seed/gallery2/200/200.jpg" alt="Community Art"
+                                    class="img-fluid rounded-3">
+                                <div class="gallery-overlay-small">
+                                    <small>Workshop Creation</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="gallery-item-small">
+                                <img src="https://picsum.photos/seed/gallery3/200/200.jpg" alt="Community Art"
+                                    class="img-fluid rounded-3">
+                                <div class="gallery-overlay-small">
+                                    <small>Youth Project</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="gallery-item-small">
+                                <img src="https://picsum.photos/seed/gallery4/200/200.jpg" alt="Community Art"
+                                    class="img-fluid rounded-3">
+                                <div class="gallery-overlay-small">
+                                    <small>Public Mural</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-primary-custom">Submit Your Art</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5><i class="bi bi-palette-fill"></i> Street Art Festival</h5>
+                    <p>Celebrating urban creativity and bringing art to the streets. Join us for an unforgettable
+                        experience of colors, culture, and community.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on upcoming events and exclusive offers.</p>
+                    <form id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 Street Art Festival. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        .tag-cloud .badge {
+            font-size: 0.875rem;
+            padding: 0.5rem 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .tag-cloud .badge:hover {
+            background-color: var(--primary-color) !important;
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
+        .popular-posts h6 a {
+            color: var(--tertiary-color);
+            transition: color 0.3s ease;
+        }
+
+        .popular-posts h6 a:hover {
+            color: var(--primary-color);
+        }
+
+        [data-theme="dark"] .popular-posts h6 a {
+            color: var(--dark-text);
+        }
+
+        [data-theme="dark"] .popular-posts h6 a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</body>
+
+</html>

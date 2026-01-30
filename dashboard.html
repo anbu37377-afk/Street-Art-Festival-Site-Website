@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Street Art Festival Admin</title>
+    <meta name="description" content="Street Art Festival Admin Dashboard - Manage events, users, tickets, and festival operations.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dashboard">
+    
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar col-md-3 col-lg-2 d-md-block">
+        <div class="position-sticky pt-3">
+            <div class="text-center mb-4">
+                <i class="bi bi-palette-fill text-primary fs-2 mb-2"></i>
+                <h5 class="text-white">Admin Panel</h5>
+            </div>
+            
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" data-target="analytics">
+                        <i class="bi bi-graph-up me-2"></i>Analytics
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="users">
+                        <i class="bi bi-people me-2"></i>Users
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="orders">
+                        <i class="bi bi-bag-check me-2"></i>Orders
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="messages">
+                        <i class="bi bi-envelope me-2"></i>Messages
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="events">
+                        <i class="bi bi-calendar-event me-2"></i>Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="artists">
+                        <i class="bi bi-palette me-2"></i>Artists
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="settings">
+                        <i class="bi bi-gear me-2"></i>Settings
+                    </a>
+                </li>
+            </ul>
+            
+            <hr class="text-white-50">
+            
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://via.placeholder.com/32x32/FF6B35/FFFFFF?text=Admin" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Admin User</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <!-- Header -->
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
+                </div>
+                <button type="button" class="btn btn-sm btn-primary-custom">
+                    <i class="bi bi-plus-circle me-1"></i>New Event
+                </button>
+            </div>
+        </div>
+
+        <!-- Analytics Section -->
+        <section id="analytics" class="content-section">
+            <div class="row mb-4">
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="stats-card">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="text-muted mb-2">Total Visitors</h6>
+                                <h3 class="mb-0" id="totalVisitors">12,543</h3>
+                            </div>
+                            <div class="text-primary">
+                                <i class="bi bi-people-fill fs-2"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <small class="text-success">
+                                <i class="bi bi-arrow-up"></i> 12% from last month
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="stats-card">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="text-muted mb-2">Total Revenue</h6>
+                                <h3 class="mb-0" id="totalRevenue">$45,678</h3>
+                            </div>
+                            <div class="text-success">
+                                <i class="bi bi-currency-dollar fs-2"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <small class="text-success">
+                                <i class="bi bi-arrow-up"></i> 8% from last month
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="stats-card">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="text-muted mb-2">Active Events</h6>
+                                <h3 class="mb-0" id="totalEvents">12</h3>
+                            </div>
+                            <div class="text-info">
+                                <i class="bi bi-calendar-event fs-2"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <small class="text-warning">
+                                <i class="bi bi-dash"></i> Same as last month
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="stats-card">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="text-muted mb-2">Total Artists</h6>
+                                <h3 class="mb-0" id="totalArtists">28</h3>
+                            </div>
+                            <div class="text-warning">
+                                <i class="bi bi-palette-fill fs-2"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <small class="text-success">
+                                <i class="bi bi-arrow-up"></i> 4 new this month
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="stats-card">
+                        <h5 class="mb-3">Visitor Analytics</h5>
+                        <canvas id="visitorsChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="stats-card">
+                        <h5 class="mb-3">Revenue Sources</h5>
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="stats-card">
+                        <h5 class="mb-3">Recent Activity</h5>
+                        <div id="recentActivity">
+                            <!-- Activity items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="stats-card">
+                        <h5 class="mb-3">Upcoming Events</h5>
+                        <canvas id="eventsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Users Section -->
+        <section id="users" class="content-section" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Users Management</h3>
+                <button class="btn btn-primary-custom">
+                    <i class="bi bi-person-plus me-2"></i>Add User
+                </button>
+            </div>
+            
+            <div class="stats-card">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="usersTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Joined</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-id="1">
+                                <td>#001</td>
+                                <td>John Doe</td>
+                                <td>john@example.com</td>
+                                <td><span class="badge bg-primary">Visitor</span></td>
+                                <td><span class="badge bg-success">Active</span></td>
+                                <td>2024-01-15</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr data-id="2">
+                                <td>#002</td>
+                                <td>Jane Smith</td>
+                                <td>jane@example.com</td>
+                                <td><span class="badge bg-warning">Artist</span></td>
+                                <td><span class="badge bg-success">Active</span></td>
+                                <td>2024-01-20</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr data-id="3">
+                                <td>#003</td>
+                                <td>Mike Johnson</td>
+                                <td>mike@example.com</td>
+                                <td><span class="badge bg-info">Volunteer</span></td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                                <td>2024-02-01</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Orders Section -->
+        <section id="orders" class="content-section" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Orders Management</h3>
+                <div class="btn-group">
+                    <button class="btn btn-outline-secondary" id="exportCsv">Export CSV</button>
+                    <button class="btn btn-outline-secondary" id="exportPdf">Export PDF</button>
+                    <button class="btn btn-outline-secondary" id="printData">Print</button>
+                </div>
+            </div>
+            
+            <div class="stats-card">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="ordersTable">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-id="1">
+                                <td>#ORD001</td>
+                                <td>John Doe</td>
+                                <td>VIP Pass</td>
+                                <td>$250.00</td>
+                                <td><span class="badge bg-success">Completed</span></td>
+                                <td>2024-03-10</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
+                                </td>
+                            </tr>
+                            <tr data-id="2">
+                                <td>#ORD002</td>
+                                <td>Jane Smith</td>
+                                <td>Weekend Pass</td>
+                                <td>$85.00</td>
+                                <td><span class="badge bg-warning">Processing</span></td>
+                                <td>2024-03-12</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Messages Section -->
+        <section id="messages" class="content-section" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Messages</h3>
+                <button class="btn btn-primary-custom">
+                    <i class="bi bi-envelope-plus me-2"></i>Compose
+                </button>
+            </div>
+            
+            <div class="stats-card">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="messagesTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>From</th>
+                                <th>Subject</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-id="1">
+                                <td>#MSG001</td>
+                                <td>Sarah Wilson</td>
+                                <td>Artist Application Inquiry</td>
+                                <td><span class="badge bg-warning">Artist</span></td>
+                                <td>2024-03-14</td>
+                                <td><span class="badge bg-danger">Unread</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-success btn-reply"><i class="bi bi-reply"></i></button>
+                                </td>
+                            </tr>
+                            <tr data-id="2">
+                                <td>#MSG002</td>
+                                <td>Tom Brown</td>
+                                <td>Sponsorship Proposal</td>
+                                <td><span class="badge bg-info">Sponsorship</span></td>
+                                <td>2024-03-13</td>
+                                <td><span class="badge bg-success">Read</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-success btn-reply"><i class="bi bi-reply"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="content-section" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Events Management</h3>
+                <button class="btn btn-primary-custom">
+                    <i class="bi bi-calendar-plus me-2"></i>Create Event
+                </button>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="stats-card">
+                        <h5>Graffiti Workshop</h5>
+                        <p class="text-muted">March 15, 2026 - 2:00 PM</p>
+                        <p>Basic spray painting techniques for beginners.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Active</span>
+                            <button class="btn btn-sm btn-outline-primary">Edit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="stats-card">
+                        <h5>Live Art Battle</h5>
+                        <p class="text-muted">March 16, 2026 - 6:00 PM</p>
+                        <p>Competitive graffiti battle with prizes.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Active</span>
+                            <button class="btn btn-sm btn-outline-primary">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artists Section -->
+        <section id="artists" class="content-section" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Artists Management</h3>
+                <button class="btn btn-primary-custom">
+                    <i class="bi bi-person-plus me-2"></i>Add Artist
+                </button>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="stats-card text-center">
+                        <img src="https://via.placeholder.com/100x100/004E89/FFFFFF?text=Artist+1" alt="Artist" class="rounded-circle mb-3" width="100" height="100">
+                        <h6>Alex Rivera</h6>
+                        <p class="text-muted small">Graffiti Master</p>
+                        <span class="badge bg-success">Active</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stats-card text-center">
+                        <img src="https://via.placeholder.com/100x100/FF6B35/FFFFFF?text=Artist+2" alt="Artist" class="rounded-circle mb-3" width="100" height="100">
+                        <h6>Maya Chen</h6>
+                        <p class="text-muted small">Stencil Artist</p>
+                        <span class="badge bg-success">Active</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stats-card text-center">
+                        <img src="https://via.placeholder.com/100x100/1A1A2E/FFFFFF?text=Artist+3" alt="Artist" class="rounded-circle mb-3" width="100" height="100">
+                        <h6>James Walker</h6>
+                        <p class="text-muted small">Mural Specialist</p>
+                        <span class="badge bg-warning">Pending</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="content-section" style="display: none;">
+            <h3 class="mb-4">Settings</h3>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="stats-card">
+                        <h5 class="mb-4">General Settings</h5>
+                        <form id="settingsForm">
+                            <div class="mb-3">
+                                <label class="form-label">Festival Name</label>
+                                <input type="text" class="form-control" value="Street Art Festival">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contact Email</label>
+                                <input type="email" class="form-control" value="info@streetartfestival.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" value="+1 (555) 123-4567">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Address</label>
+                                <textarea class="form-control" rows="3">123 Art District Street, Creative City, CC 12345</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="stats-card">
+                        <h5 class="mb-4">Quick Stats</h5>
+                        <div class="mb-3">
+                            <small class="text-muted">Total Users</small>
+                            <h4>1,234</h4>
+                        </div>
+                        <div class="mb-3">
+                            <small class="text-muted">Active Events</small>
+                            <h4>12</h4>
+                        </div>
+                        <div class="mb-3">
+                            <small class="text-muted">Total Revenue</small>
+                            <h4>$45,678</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Dashboard JS -->
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

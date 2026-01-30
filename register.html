@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Street Art Festival</title>
+    <meta
+        name="description"="Create your Street Art Festival account to access tickets, workshops, artist applications, and exclusive festival content.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-palette-fill"></i> Street Art Festival
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="login.html" class="btn btn-secondary-custom btn-custom-sm">Login</a>
+                        <a href="register.html" class="btn btn-primary-custom btn-custom-sm">Sign Up</a>
+                        <button id="themeToggle" class="btn btn-outline-light btn-sm ms-2">
+                            <i class="bi bi-moon-fill"></i> Dark
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Register Section -->
+    <section class="section min-vh-100 d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="register-form">
+                        <div class="text-center mb-4">
+                            <a href="index.html" class="text-decoration-none d-inline-flex align-items-center mb-3">
+                                <i class="bi bi-palette-fill text-primary fs-1 me-2"></i>
+                                <span class="h2 fw-bold text-primary mb-0">Street Art Festival</span>
+                            </a>
+                            <h2>Join the Festival</h2>
+                            <p class="text-muted">Create your account and start your street art journey</p>
+                        </div>
+
+                        <form id="registerForm" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" placeholder="First name" required>
+                                    </div>
+                                    <div class="invalid-feedback">Please provide your first name.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" placeholder="Last name" required>
+                                    </div>
+                                    <div class="invalid-feedback">Please provide your last name.</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Email Address *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" placeholder="Enter your email"
+                                            required>
+                                    </div>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Phone Number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                        <input type="tel" class="form-control" placeholder="(555) 123-4567">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Password *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Create password" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="invalid-feedback">Please create a password.</div>
+                                    <small class="text-muted">Must be at least 8 characters</small>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Confirm Password *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                                        <input type="password" class="form-control" id="confirmPassword"
+                                            placeholder="Confirm password" required>
+                                    </div>
+                                    <div class="invalid-feedback">Passwords do not match.</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Account Type</label>
+                                    <select class="form-control" required>
+                                        <option value="">Select account type</option>
+                                        <option value="visitor">Festival Visitor</option>
+                                        <option value="artist">Artist</option>
+                                        <option value="volunteer">Volunteer</option>
+                                        <option value="sponsor">Sponsor</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select an account type.</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Interests</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="interest1"
+                                                    value="workshops">
+                                                <label class="form-check-label" for="interest1">
+                                                    Workshops
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="interest2"
+                                                    value="exhibitions">
+                                                <label class="form-check-label" for="interest2">
+                                                    Exhibitions
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="interest3"
+                                                    value="performances">
+                                                <label class="form-check-label" for="interest3">
+                                                    Live Performances
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="interest4"
+                                                    value="competitions">
+                                                <label class="form-check-label" for="interest4">
+                                                    Competitions
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="terms" required>
+                                        <label class="form-check-label" for="terms">
+                                            I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a
+                                                href="#" class="text-primary">Privacy Policy</a> *
+                                        </label>
+                                        <div class="invalid-feedback">You must agree to the terms and conditions.</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter" value="yes">
+                                        <label class="form-check-label" for="newsletter">
+                                            I'd like to receive festival updates and exclusive offers
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-custom w-100">
+                                        <i class="bi bi-person-plus me-2"></i>Create Account
+                                    </button>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <p class="mb-0">Already have an account? <a href="login.html"
+                                            class="text-primary text-decoration-none">Sign In</a></p>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="divider my-4">
+                            <span class="text-muted">OR</span>
+                        </div>
+
+                        <!-- Social Registration Options -->
+                        <div class="social-register">
+                            <button class="btn btn-outline-primary w-100 mb-2">
+                                <i class="bi bi-google me-2"></i>Sign up with Google
+                            </button>
+                            <button class="btn btn-outline-primary w-100 mb-2">
+                                <i class="bi bi-facebook me-2"></i>Sign up with Facebook
+                            </button>
+                            <button class="btn btn-outline-primary w-100">
+                                <i class="bi bi-twitter me-2"></i>Sign up with Twitter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    href="#">Help Center</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    <li><a href="#">FAQ</a></li>
+    </ul>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Newsletter</h5>
+        <p>Subscribe to get updates on upcoming events and exclusive offers.</p>
+        <form id="newsletterForm">
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email" required>
+                <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+
+    <!-- Back to Top -->
+    <div id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        .register-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] .register-form {
+            background: var(--tertiary-color);
+            color: var(--dark-text);
+        }
+
+        .divider {
+            position: relative;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .divider span {
+            background: white;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        [data-theme="dark"] .divider span {
+            background: var(--tertiary-color);
+        }
+
+        .social-register .btn {
+            border-radius: 50px;
+            padding: 0.75rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .social-register .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .input-group-text {
+            background: var(--light-bg);
+            border: 1px solid var(--border-color);
+        }
+
+        [data-theme="dark"] .input-group-text {
+            background: var(--dark-bg);
+            border-color: var(--border-color);
+        }
+
+        .min-vh-100 {
+            min-height: 100vh;
+        }
+
+        .form-check {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+
+    <script>
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('bi-eye');
+                icon.classList.add('bi-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('bi-eye-slash');
+                icon.classList.add('bi-eye');
+            }
+        });
+
+        // Password confirmation validation
+        document.getElementById('confirmPassword').addEventListener('input', function () {
+            const password = document.getElementById('password').value;
+            const confirmPassword = this.value;
+
+            if (password !== confirmPassword) {
+                this.setCustomValidity('Passwords do not match');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+
+        // Handle registration form submission
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (!this.checkValidity()) {
+                e.stopPropagation();
+                this.classList.add('was-validated');
+                return;
+            }
+
+            // Check password match
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPassword').setCustomValidity('Passwords do not match');
+                this.classList.add('was-validated');
+                return;
+            }
+
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Creating Account...';
+            submitBtn.disabled = true;
+
+            // Simulate registration process
+            setTimeout(() => {
+                // Show success message
+                const alertDiv = document.createElement('div');
+                alertDiv.className = 'alert alert-success alert-dismissible fade show';
+                alertDiv.innerHTML = `
+                    <strong>Success!</strong> Your account has been created successfully. Redirecting to login...
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+
+                this.insertBefore(alertDiv, this.firstChild);
+
+                // Reset form
+                this.reset();
+                this.classList.remove('was-validated');
+
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+
+                // Redirect to login after 2 seconds
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                }, 2000);
+            }, 2000);
+        });
+
+        // Handle social registration buttons
+        document.querySelectorAll('.social-register button').forEach(button => {
+            button.addEventListener('click', function () {
+                const provider = this.textContent.trim().split(' ')[3];
+                showNotification(`Creating account with ${provider}...`, 'info');
+
+                // Simulate social registration
+                setTimeout(() => {
+                    showNotification(`Account created with ${provider}!`, 'success');
+                    setTimeout(() => {
+                        window.location.href = 'dashboard.html';
+                    }, 1500);
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
