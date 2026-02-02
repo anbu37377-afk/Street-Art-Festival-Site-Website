@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Street Art Festival Admin</title>
-    <meta name="description" content="Street Art Festival Admin Dashboard - Manage events, users, tickets, and festival operations.">
-    
+    <meta name="description"
+        content="Street Art Festival Admin Dashboard - Manage events, users, tickets, and festival operations.">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -15,16 +17,17 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="dashboard">
-    
+
     <!-- Sidebar Navigation -->
     <nav class="sidebar col-md-3 col-lg-2 d-md-block">
         <div class="position-sticky pt-3">
             <div class="text-center mb-4">
-                <i class="bi bi-palette-fill text-primary fs-2 mb-2"></i>
+                <i class="bi bi-palette-fill brand-logo-text fs-2 mb-2"></i>
                 <h5 class="text-white">Admin Panel</h5>
             </div>
-            
+
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link active" href="#" data-target="analytics">
@@ -62,18 +65,22 @@
                     </a>
                 </li>
             </ul>
-            
+
             <hr class="text-white-50">
-            
+
             <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://via.placeholder.com/32x32/FF6B35/FFFFFF?text=Admin" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://via.placeholder.com/32x32/FF6B35/FFFFFF?text=Admin" alt="Admin" width="32"
+                        height="32" class="rounded-circle me-2">
                     <strong>Admin User</strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                     <li><a class="dropdown-item" href="#">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
                     <li><a class="dropdown-item" href="index.html">Sign out</a></li>
                 </ul>
             </div>
@@ -83,7 +90,8 @@
     <!-- Main Content -->
     <main class="main-content col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <!-- Header -->
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Dashboard</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
                 <div class="btn-group me-2">
@@ -117,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="stats-card">
                         <div class="d-flex justify-content-between">
@@ -136,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="stats-card">
                         <div class="d-flex justify-content-between">
@@ -155,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="stats-card">
                         <div class="d-flex justify-content-between">
@@ -184,7 +192,7 @@
                         <canvas id="visitorsChart"></canvas>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 mb-4">
                     <div class="stats-card">
                         <h5 class="mb-3">Revenue Sources</h5>
@@ -203,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-6 mb-4">
                     <div class="stats-card">
                         <h5 class="mb-3">Upcoming Events</h5>
@@ -221,7 +229,7 @@
                     <i class="bi bi-person-plus me-2"></i>Add User
                 </button>
             </div>
-            
+
             <div class="stats-card">
                 <div class="table-responsive">
                     <table class="table table-hover" id="usersTable">
@@ -245,8 +253,10 @@
                                 <td><span class="badge bg-success">Active</span></td>
                                 <td>2024-01-15</td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
-                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i class="bi bi-trash"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i
+                                            class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i
+                                            class="bi bi-trash"></i></button>
                                 </td>
                             </tr>
                             <tr data-id="2">
@@ -257,8 +267,10 @@
                                 <td><span class="badge bg-success">Active</span></td>
                                 <td>2024-01-20</td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
-                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i class="bi bi-trash"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i
+                                            class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i
+                                            class="bi bi-trash"></i></button>
                                 </td>
                             </tr>
                             <tr data-id="3">
@@ -269,8 +281,10 @@
                                 <td><span class="badge bg-warning">Pending</span></td>
                                 <td>2024-02-01</td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
-                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i class="bi bi-trash"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i
+                                            class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger btn-delete"><i
+                                            class="bi bi-trash"></i></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -289,7 +303,7 @@
                     <button class="btn btn-outline-secondary" id="printData">Print</button>
                 </div>
             </div>
-            
+
             <div class="stats-card">
                 <div class="table-responsive">
                     <table class="table table-hover" id="ordersTable">
@@ -313,8 +327,10 @@
                                 <td><span class="badge bg-success">Completed</span></td>
                                 <td>2024-03-10</td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
-                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i
+                                            class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i
+                                            class="bi bi-pencil"></i></button>
                                 </td>
                             </tr>
                             <tr data-id="2">
@@ -325,8 +341,10 @@
                                 <td><span class="badge bg-warning">Processing</span></td>
                                 <td>2024-03-12</td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
-                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i
+                                            class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-edit"><i
+                                            class="bi bi-pencil"></i></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -343,7 +361,7 @@
                     <i class="bi bi-envelope-plus me-2"></i>Compose
                 </button>
             </div>
-            
+
             <div class="stats-card">
                 <div class="table-responsive">
                     <table class="table table-hover" id="messagesTable">
@@ -367,8 +385,10 @@
                                 <td>2024-03-14</td>
                                 <td><span class="badge bg-danger">Unread</span></td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
-                                    <button class="btn btn-sm btn-outline-success btn-reply"><i class="bi bi-reply"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i
+                                            class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-success btn-reply"><i
+                                            class="bi bi-reply"></i></button>
                                 </td>
                             </tr>
                             <tr data-id="2">
@@ -379,8 +399,10 @@
                                 <td>2024-03-13</td>
                                 <td><span class="badge bg-success">Read</span></td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-primary btn-view"><i class="bi bi-eye"></i></button>
-                                    <button class="btn btn-sm btn-outline-success btn-reply"><i class="bi bi-reply"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary btn-view"><i
+                                            class="bi bi-eye"></i></button>
+                                    <button class="btn btn-sm btn-outline-success btn-reply"><i
+                                            class="bi bi-reply"></i></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -397,7 +419,7 @@
                     <i class="bi bi-calendar-plus me-2"></i>Create Event
                 </button>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="stats-card">
@@ -432,11 +454,12 @@
                     <i class="bi bi-person-plus me-2"></i>Add Artist
                 </button>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="stats-card text-center">
-                        <img src="https://via.placeholder.com/100x100/004E89/FFFFFF?text=Artist+1" alt="Artist" class="rounded-circle mb-3" width="100" height="100">
+                        <img src="https://via.placeholder.com/100x100/004E89/FFFFFF?text=Artist+1" alt="Artist"
+                            class="rounded-circle mb-3" width="100" height="100">
                         <h6>Alex Rivera</h6>
                         <p class="text-muted small">Graffiti Master</p>
                         <span class="badge bg-success">Active</span>
@@ -444,7 +467,8 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="stats-card text-center">
-                        <img src="https://via.placeholder.com/100x100/FF6B35/FFFFFF?text=Artist+2" alt="Artist" class="rounded-circle mb-3" width="100" height="100">
+                        <img src="https://via.placeholder.com/100x100/FF6B35/FFFFFF?text=Artist+2" alt="Artist"
+                            class="rounded-circle mb-3" width="100" height="100">
                         <h6>Maya Chen</h6>
                         <p class="text-muted small">Stencil Artist</p>
                         <span class="badge bg-success">Active</span>
@@ -452,7 +476,8 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="stats-card text-center">
-                        <img src="https://via.placeholder.com/100x100/1A1A2E/FFFFFF?text=Artist+3" alt="Artist" class="rounded-circle mb-3" width="100" height="100">
+                        <img src="https://via.placeholder.com/100x100/1A1A2E/FFFFFF?text=Artist+3" alt="Artist"
+                            class="rounded-circle mb-3" width="100" height="100">
                         <h6>James Walker</h6>
                         <p class="text-muted small">Mural Specialist</p>
                         <span class="badge bg-warning">Pending</span>
@@ -464,7 +489,7 @@
         <!-- Settings Section -->
         <section id="settings" class="content-section" style="display: none;">
             <h3 class="mb-4">Settings</h3>
-            
+
             <div class="row">
                 <div class="col-lg-8">
                     <div class="stats-card">
@@ -484,13 +509,14 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Address</label>
-                                <textarea class="form-control" rows="3">123 Art District Street, Creative City, CC 12345</textarea>
+                                <textarea class="form-control"
+                                    rows="3">123 Art District Street, Creative City, CC 12345</textarea>
                             </div>
                             <button type="submit" class="btn btn-primary-custom">Save Changes</button>
                         </form>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4">
                     <div class="stats-card">
                         <h5 class="mb-4">Quick Stats</h5>
@@ -517,4 +543,5 @@
     <!-- Dashboard JS -->
     <script src="assets/js/dashboard.js"></script>
 </body>
+
 </html>

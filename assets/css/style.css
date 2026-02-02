@@ -186,7 +186,10 @@ h6 {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.header.scrolled .navbar-brand,
+.header.scrolled .navbar-brand {
+  color: var(--primary-color) !important;
+}
+
 .header.scrolled .navbar-nav .nav-link {
   color: white !important;
 }
@@ -205,7 +208,10 @@ h6 {
   background-color: rgba(26, 26, 46, 0.95) !important;
 }
 
-[data-theme="dark"] .header.scrolled .navbar-brand,
+[data-theme="dark"] .header.scrolled .navbar-brand {
+  color: var(--primary-color) !important;
+}
+
 [data-theme="dark"] .header.scrolled .navbar-nav .nav-link {
   color: white !important;
 }
@@ -219,6 +225,12 @@ h6 {
   color: var(--primary-color) !important;
 }
 
+/* Consistent Brand Logo Style */
+.brand-logo-text {
+  color: var(--primary-color) !important;
+  font-weight: 800 !important;
+}
+
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 800;
@@ -229,8 +241,9 @@ h6 {
 .navbar-nav .nav-link {
   color: var(--light-text) !important;
   font-weight: 500;
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .navbar-nav .nav-link:hover {
@@ -374,7 +387,6 @@ h6 {
   background-color: var(--tertiary-color);
   color: white;
   padding: 60px 0 20px;
-  margin-top: 80px;
 }
 
 .footer h5 {
@@ -697,7 +709,13 @@ h6 {
 }
 
 [data-theme="dark"] .pagination .page-link {
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--dark-text);
+}
+
+[data-theme="dark"] .pagination .page-link:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 /* Mobile Responsive for Blog */
@@ -753,7 +771,6 @@ h6 {
 
 .pricing-card.featured {
   border: 3px solid var(--primary-color);
-  transform: scale(1.05);
 }
 
 .pricing-card:hover {
@@ -762,7 +779,7 @@ h6 {
 }
 
 .pricing-card.featured:hover {
-  transform: scale(1.05) translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /* 404 Page */
@@ -950,11 +967,12 @@ h6 {
   color: white;
 }
 
-height: 20px;
-border: 3px solid rgba(255, 255, 255, .3);
-border-radius: 50%;
-border-top-color: white;
-animation: spin 1s ease-in-out infinite;
+.spinner-custom {
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
 }
 
 @keyframes spin {
