@@ -20,18 +20,18 @@
 <body>
 
     <!-- Register Section -->
-    <section class="section min-vh-100 d-flex align-items-center py-5">
+    <section class="section min-vh-100 d-flex align-items-center py-3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8">
                     <div class="register-form">
-                        <div class="text-center mb-4">
-                            <a href="index.html" class="text-decoration-none d-inline-flex align-items-center mb-3">
-                                <i class="bi bi-palette-fill brand-logo-text fs-1 me-2"></i>
-                                <span class="h2 brand-logo-text mb-0">Street Art Festival</span>
+                        <div class="text-center mb-3">
+                            <a href="index.html"
+                                class="text-decoration-none d-flex align-items-center justify-content-center mb-2 navbar-brand">
+                                <i class="bi bi-palette-fill"></i> Street Art Festival
                             </a>
-                            <h2>Join the Festival</h2>
-                            <p class="text-muted">Create your account and start your street art journey</p>
+                            <h2 class="h4">Join the Festival</h2>
+                            <p class="text-muted small mb-0">Create your account and start your street art journey</p>
                         </div>
 
                         <form id="registerForm" class="needs-validation" novalidate>
@@ -109,47 +109,7 @@
                                     <div class="invalid-feedback">Please select an account type.</div>
                                 </div>
 
-                                <div class="col-12">
-                                    <label class="form-label">Interests</label>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="interest1"
-                                                    value="workshops">
-                                                <label class="form-check-label" for="interest1">
-                                                    Workshops
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="interest2"
-                                                    value="exhibitions">
-                                                <label class="form-check-label" for="interest2">
-                                                    Exhibitions
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="interest3"
-                                                    value="performances">
-                                                <label class="form-check-label" for="interest3">
-                                                    Live Performances
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="interest4"
-                                                    value="competitions">
-                                                <label class="form-check-label" for="interest4">
-                                                    Competitions
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                                 <div class="col-12">
                                     <div class="form-check">
@@ -162,14 +122,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="newsletter" value="yes">
-                                        <label class="form-check-label" for="newsletter">
-                                            I'd like to receive festival updates and exclusive offers
-                                        </label>
-                                    </div>
-                                </div>
+
 
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary-custom w-100">
@@ -177,9 +130,9 @@
                                     </button>
                                 </div>
 
-                                <div class="col-12 text-center">
+                                <div class="col-12 text-center mt-2">
                                     <p class="mb-0">Already have an account? <a href="login.html"
-                                            class="text-primary text-decoration-none">Sign In</a></p>
+                                            class="text-primary text-decoration-none small">Sign In</a></p>
                                 </div>
                             </div>
                         </form>
@@ -188,19 +141,49 @@
                             <span class="text-muted">OR</span>
                         </div>
 
-                        <!-- Social Registration Options -->
                         <div class="social-register">
                             <button
-                                class="btn btn-outline-primary w-100 mb-2 d-flex align-items-center justify-content-center gap-2">
-                                <i class="bi bi-google"></i>Sign up with Google
+                                class="btn btn-outline-primary w-100 mb-2 d-flex align-items-center justify-content-center">
+                                <span class="social-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48">
+                                        <path fill="#FFC107"
+                                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+                                        </path>
+                                        <path fill="#FF3D00"
+                                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+                                        </path>
+                                        <path fill="#4CAF50"
+                                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+                                        </path>
+                                        <path fill="#1976D2"
+                                            d="M43.611,20.083L43.595,20L24,20v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span>Sign up with Google</span>
                             </button>
                             <button
-                                class="btn btn-outline-primary w-100 mb-2 d-flex align-items-center justify-content-center gap-2">
-                                <i class="bi bi-facebook"></i>Sign up with Facebook
+                                class="btn btn-outline-primary w-100 mb-2 d-flex align-items-center justify-content-center">
+                                <span class="social-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48">
+                                        <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+                                        <path fill="#fff"
+                                            d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C17.41,42.445,18.685,42.66,20,42.66c1.315,0,2.59-0.215,3.805-0.627V29.036H23.572z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span>Sign up with Facebook</span>
                             </button>
                             <button
-                                class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-2">
-                                <i class="bi bi-twitter"></i>Sign up with Twitter
+                                class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center">
+                                <span class="social-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48">
+                                        <path fill="#03A9F4"
+                                            d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.027,0,0.056,0,0.084c0,3.543,2.541,6.502,5.909,7.177c-0.617,0.17-1.27,0.259-1.937,0.259c-0.471,0-0.933-0.048-1.379-0.133c0.936,2.901,3.654,5.015,6.883,5.076c-2.522,1.961-5.7,3.127-9.146,3.127c-0.592,0-1.178-0.035-1.751-0.103C10.333,38.354,14.435,39,18.792,39c13.669,0,21.144-11.229,21.144-20.941c0-0.319-0.007-0.635-0.022-0.948C41.366,16.14,42.584,14.364,43.411,12.429z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span>Sign up with Twitter</span>
                             </button>
                         </div>
                     </div>
@@ -208,6 +191,8 @@
             </div>
         </div>
     </section>
+
+
 
 
 
@@ -225,7 +210,7 @@
     <style>
         .register-form {
             background: white;
-            padding: 2.5rem;
+            padding: 1.5rem 2rem;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
@@ -238,7 +223,7 @@
         .divider {
             position: relative;
             text-align: center;
-            margin: 1.5rem 0;
+            margin: 1rem 0;
         }
 
         .divider::before {
