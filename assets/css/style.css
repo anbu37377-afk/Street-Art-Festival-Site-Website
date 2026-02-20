@@ -704,10 +704,18 @@ h6 {
 }
 
 .popular-posts img {
+  width: 60px !important;
+  height: 60px !important;
   transition: all 0.3s ease;
   flex-shrink: 0;
-  /* Prevent image from shrinking */
   object-fit: cover;
+  border-radius: 8px;
+}
+
+.popular-posts .d-flex div {
+  flex-grow: 1;
+  min-width: 0;
+  /* Allow text wrapping */
 }
 
 .popular-posts h6 a {
@@ -1736,11 +1744,18 @@ img {
 }
 
 .video-item img {
+  width: 100px !important;
+  height: 70px !important;
   transition: all 0.3s ease;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.video-item:hover img {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+.video-item-info {
+  flex-grow: 1;
+  min-width: 0;
+  /* Allow text wrapping */
 }
 
 /* Community Spotlight Styles */
