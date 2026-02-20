@@ -8,7 +8,7 @@
   --secondary-color: #004E89;
   --tertiary-color: #1A1A2E;
   --light-bg: #F8F9FA;
-  --dark-bg: #1A1A2E;
+  --dark-bg: #121212;
   --light-text: #333333;
   --dark-text: #FFFFFF;
   --border-color: #DEE2E6;
@@ -21,12 +21,13 @@
 /* Dark Theme Variables */
 /* Dark Theme Variables */
 [data-theme="dark"] {
-  --light-bg: #1A1A2E;
-  --dark-bg: #F8F9FA;
+  --light-bg: #000000;
+  --dark-bg: #121212;
+  --tertiary-color: #000000;
   --light-text: #FFFFFF;
   --dark-text: #FFFFFF;
   /* Fixed: Was #333333, invisible on dark background */
-  --border-color: #495057;
+  --border-color: #333333;
 }
 
 /* Dark Theme Utility Overrides */
@@ -40,7 +41,7 @@
 }
 
 [data-theme="dark"] .bg-light {
-  background-color: #16213e !important;
+  background-color: #0a0a0a !important;
   /* Slightly lighter than tertiary */
   color: var(--dark-text) !important;
 }
@@ -181,7 +182,7 @@ h6 {
 
 /* Header Scrolled State */
 .header.scrolled {
-  background-color: rgba(26, 26, 46, 0.95) !important;
+  background-color: rgba(0, 0, 0, 0.95) !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
@@ -205,7 +206,7 @@ h6 {
 
 /* Dark theme scrolled state */
 [data-theme="dark"] .header.scrolled {
-  background-color: rgba(26, 26, 46, 0.95) !important;
+  background-color: rgba(0, 0, 0, 0.98) !important;
 }
 
 [data-theme="dark"] .header.scrolled .navbar-brand {
@@ -232,8 +233,8 @@ h6 {
 }
 
 .navbar {
-  padding-top: 0.35rem !important;
-  padding-bottom: 0.35rem !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
 }
 
 .navbar-brand {
@@ -280,6 +281,10 @@ h6 {
 }
 
 /* Button Styles */
+.btn {
+  border-radius: 50px !important;
+}
+
 .btn-primary-custom {
   background-color: var(--primary-color);
   border: none;
@@ -343,6 +348,10 @@ h6 {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
   text-align: center;
+}
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #000000, var(--secondary-color));
 }
 
 .hero h1 {
@@ -519,11 +528,16 @@ h6 {
   background-color: var(--light-bg);
 }
 
-.sidebar {
+.dashboard .sidebar {
   background-color: var(--tertiary-color);
   min-height: 100vh;
   color: white;
   padding: 2rem 0;
+}
+
+.sidebar {
+  background-color: transparent;
+  padding: 0;
 }
 
 .sidebar .nav-link {
@@ -652,9 +666,10 @@ h6 {
 /* Sidebar Cards */
 .sidebar .card {
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  margin-bottom: 2rem;
 }
 
 [data-theme="dark"] .sidebar .card {
@@ -680,6 +695,8 @@ h6 {
 /* Popular Posts */
 .popular-posts .d-flex {
   transition: all 0.3s ease;
+  align-items: center;
+  /* Ensure vertical centering */
 }
 
 .popular-posts .d-flex:hover {
@@ -688,10 +705,9 @@ h6 {
 
 .popular-posts img {
   transition: all 0.3s ease;
-}
-
-.popular-posts .d-flex:hover img {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  /* Prevent image from shrinking */
+  object-fit: cover;
 }
 
 .popular-posts h6 a {
@@ -854,6 +870,10 @@ h6 {
   color: white;
 }
 
+[data-theme="dark"] .error-page {
+  background: linear-gradient(135deg, #000000, var(--secondary-color));
+}
+
 .error-page h1 {
   font-size: 8rem;
   font-weight: 800;
@@ -869,6 +889,10 @@ h6 {
   text-align: center;
   background: linear-gradient(135deg, var(--secondary-color), var(--tertiary-color));
   color: white;
+}
+
+[data-theme="dark"] .coming-soon {
+  background: linear-gradient(135deg, #000000, var(--secondary-color));
 }
 
 .countdown {
@@ -1702,6 +1726,9 @@ img {
 .video-item {
   transition: all 0.3s ease;
   cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  gap: 15px;
 }
 
 .video-item:hover {
